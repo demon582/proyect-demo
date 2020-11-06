@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: white;
+}
+
+body{
+    background: black;
+}
+
+
+header{
+    background: #2d3047;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+header nav .menu .link{
+    display: flex;
+}
+
+header nav .menu .link a {
+    padding: 16px 12px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 6px solid transparent;
+    transition: border .3s ease-in;
+}
+
+header nav .menu .link a:hover{
+    border-bottom-color: #e84855;
+}
+
+header nav .menu .link a.active{
+    border-bottom-color: #e84855;
+
+}
+
+header nav .buttom{
+    display: inline-block;
+    padding: 23px 20px;
+    border: none;
+    background: #e84855;
+    color: #fff;
+}
+
+
+main{
+    width: 80%;
+    margin: 40px auto;
+}
+
+main .content{
+    margin-bottom: 20px;
+}
+
+main .content img{
+    width: 100%;
+}
+
+
+aside{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.aside img{
+    width: 100%;
+}
+
+.aside p{
+    background: black;
+    color: white;
+}
+
+.footer{
+    line-height: 5;
+    background: darkslateblue;
+    text-align: center;
+}
+
+
+@media screen and (min-width:1024px){
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main{
+        flex-basis: 70%;
+    }
+
+    .aside{
+        flex-basis: 20%;
+        position: relative;
+        bottom: 39px;
+        left: 30px;
+    }
+}
